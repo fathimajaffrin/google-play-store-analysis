@@ -1,10 +1,20 @@
-# Google Play Store App Analysis
+# 📊 Google Play Store App Analysis
 
 ## 📌 Project Overview
 
-This project performs an exploratory data analysis (EDA) of Google Play Store applications using Python.
+This project analyzes Google Play Store application data to identify patterns and insights related to app ratings, reviews, installs, pricing, categories, and other application attributes.
 
-The analysis focuses on app ratings, reviews, installs, pricing, categories, app size, and update history to identify patterns and relationships that can help understand app performance.
+The dataset contains information on 10,000+ applications and was analyzed using Python and Pandas.
+
+## 🎯 Objectives
+
+- Understand the distribution of apps across different categories
+- Analyze app ratings and review counts
+- Identify patterns in app installations
+- Examine free vs. paid applications
+- Analyze app pricing and size
+- Explore relationships between reviews, ratings, and installs
+- Identify trends and patterns within the Google Play Store dataset
 
 ## 🛠️ Tools & Technologies
 
@@ -12,45 +22,54 @@ The analysis focuses on app ratings, reviews, installs, pricing, categories, app
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Jupyter Notebook
+- Exploratory Data Analysis (EDA)
 
-## 📊 Analysis Performed
+## 🧹 Data Cleaning
 
-- Data cleaning and preprocessing
-- Missing-value analysis
-- Duplicate detection and removal
-- Data type conversion
-- Date cleaning and transformation
-- Category analysis
-- Free vs Paid app comparison
-- Rating analysis
-- Price vs Rating analysis
-- Installs vs Rating analysis
-- Reviews vs Rating analysis
-- Installs vs Reviews analysis
-- App Size vs Installs analysis
-- Log transformation of skewed variables
-- Data visualization
+The raw dataset required several preprocessing steps before analysis:
 
-## 🔍 Key Findings
+- Handled missing values
+- Removed duplicate app entries
+- Cleaned the `Installs` column by removing commas and `+` symbols
+- Converted installation counts into numerical values
+- Cleaned the `Price` column by removing currency symbols
+- Processed the `Size` column
+- Standardized data types for analysis
 
-- The average app rating is approximately **4.17**.
-- Paid apps have a slightly higher average rating than free apps.
-- Price has very little relationship with app rating.
-- Installs and ratings have almost no meaningful linear relationship.
-- Installs and reviews show a very strong positive relationship after log transformation (**r ≈ 0.959**).
-- **GAME** has the highest total number of installs.
-- **COMMUNICATION** has the highest average installs per app.
-- App size has only a weak relationship with installs.
-- Most apps in the dataset were updated during the later years, particularly 2017–2018.
+## 📈 Analysis Performed
 
-## 📁 Project Files
+The project includes exploratory analysis of:
 
-- `Google_Play_Store_App_Analysis.ipynb` — Complete analysis notebook
+- App categories
+- Ratings
+- Reviews
+- Installs
+- Pricing
+- App size
+- Content ratings
+- Genres
 
-## 📈 Conclusion
+Statistical summaries and visualizations were used to identify patterns and generate insights from the dataset.
 
-The analysis shows that app popularity cannot be explained by ratings or price alone. The strongest relationship observed was between installs and reviews, indicating that apps with greater reach tend to receive substantially more user reviews.
+## 💡 Key Findings & Conclusion
 
-Overall, the project demonstrates a complete data-analysis workflow from data cleaning and preprocessing to exploratory analysis, visualization, and interpretation.
+The analysis provided several insights into the characteristics and performance of applications on the Google Play Store:
+
+- Free applications represent a significantly larger proportion of the dataset compared with paid applications.
+- Apps with higher numbers of reviews generally tend to have higher installation counts, indicating a relationship between user engagement and app popularity.
+- Most applications have ratings concentrated around the 4.0–4.5 range.
+- A relatively small number of highly popular applications account for a large share of total installations.
+- App categories differ considerably in terms of the number of applications, ratings, reviews, and installations.
+- The analysis also highlighted the importance of data cleaning and preprocessing, particularly for columns such as `Installs`, `Price`, and `Size`.
+
+Overall, the project demonstrates how data cleaning, exploratory data analysis, statistical summaries, and visualization can be used to uncover meaningful patterns in real-world application data and support data-driven insights.
+
+## 📂 Project Structure
+
+```text
+Google-Play-Store-Analysis/
+│
+├── Google_Play_Store_Analysis.ipynb
+├── googleplaystore.csv
+└── README.md
