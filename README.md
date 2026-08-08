@@ -52,6 +52,32 @@ The project includes exploratory analysis of:
 
 Statistical summaries and visualizations were used to identify patterns and generate insights from the dataset.
 
+## 📊 Visualizations
+
+### Top 10 App Categories
+
+![Top 10 App Categories](visualizations/top_10_app_categories.png)
+
+### Rating Distribution
+
+![Rating Distribution](visualizations/rating_distribution.png)
+
+### Average Rating: Free vs Paid Apps
+
+![Average Rating: Free vs Paid Apps](visualizations/average_rating_free_vs_paid.png)
+
+### Top 10 Categories by Average Installs
+
+![Top 10 Categories by Average Installs](visualizations/top_10_categories_by_average_installs.png)
+
+### Installs vs Reviews
+
+![Installs vs Reviews](visualizations/installs_vs_reviews.png)
+
+### Apps Updated by Year
+
+![Apps Updated by Year](visualizations/apps_updated_by_year.png)
+
 ## 💡 Key Findings & Conclusion
 
 The analysis provided several insights into the characteristics and performance of applications on the Google Play Store:
